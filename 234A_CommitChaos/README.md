@@ -42,7 +42,7 @@ User Settings
 
     Developed the User Settings interface using Pygubu for managing account preferences.
 
-My code for sending emails and creating confirmations was used on the web as well
+My code for sending emails and creating confirmations was used on the web as well.
 The web was done by my teammates
 
 
