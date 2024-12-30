@@ -1,0 +1,26 @@
+{% extends "default.html" %}
+{% block title %}Food Pantry Notification System{% endblock %}
+{% block header %}Subscribe{% endblock %}
+{% block content %}
+    <form method="POST" action="/do_subscribe_emails">
+    <table class="data_entry_form">
+        <tr> {# Row 1 #}
+            <th>
+                <label>Subscribe to Panther Pantry email updates?</label>
+            </th>
+        </tr>
+        <tr> {# Confirm Button #}
+            <td colspan="2">
+                <p>Yes, I want to receive email notifications when food is available.</p>
+                <button type="submit">SUBSCRIBE</button>
+            </td>
+        </tr>
+        <tr> {# Cancel Button #}
+            <td colspan="2">
+                <p>No thanks, take me back to the settings page.</p>
+                <a href="/user_settings"><button type="button">RETURN</button></a>
+            </td>
+        </tr>
+    </table>
+    </form>
+{% endblock %}

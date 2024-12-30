@@ -1,0 +1,18 @@
+{% extends "default.html" %}
+{% block title %}
+    PCC Food Pantry
+{% endblock %}
+{% block header %}
+    Subscriber Settings
+{% endblock %}
+{% block content %}
+    {% for group_key in options %}
+    {% set option_dict = options[group_key] %}
+    <h2>{{ group_key }}</h2>
+    <ul>
+        {% for route in option_dict %}
+        <li><a href="/{{ route }}">{{ option_dict[route] }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+{% endblock %}

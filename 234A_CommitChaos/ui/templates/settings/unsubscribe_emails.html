@@ -1,0 +1,26 @@
+{% extends "default.html" %}
+{% block title %}Food Pantry Notification System{% endblock %}
+{% block header %}Unsubscribe{% endblock %}
+{% block content %}
+    <form method="POST" action="/do_unsubscribe_emails">
+    <table class="data_entry_form">
+        <tr> {# Row 1 #}
+            <th>
+                <label>Unsubscribe from our mailing list?</label>
+            </th>
+        </tr>
+        <tr> {# Confirm Button #}
+            <td colspan="2">
+                <p>Yes, I want to be removed from the mailing list.</p>
+                <button type="submit">UNSUBSCRIBE</button>
+            </td>
+        </tr>
+        <tr> {# Cancel Button #}
+            <td colspan="2">
+                <p>No, I want to receive notifications when food is available.</p>
+                <a href="/user_settings"><button type="button">RETURN</button></a>
+            </td>
+        </tr>
+    </table>
+    </form>
+{% endblock %}

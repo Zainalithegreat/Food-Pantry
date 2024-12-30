@@ -1,0 +1,187 @@
+/* Style rules for data entry form */
+.data_entry_form {
+    padding: 2em;
+}
+
+.data_entry_form th {
+    text-align: left;
+    padding: .25em;
+    font-weight: bold;
+    font-size: large;
+}
+
+.data_entry_form td {
+    text-align: left;
+    padding: .25em;
+}
+
+/* Style rules for login information */
+.top_login_name {
+    float: right;
+    padding: .5em;
+    margin: 2em .5em;
+    font-weight: bold;
+    color: white;
+    background: #00667a;
+    font-family: sans-serif;
+}
+
+.top_login_button {
+    float: right;
+    padding: .5em 0 .5em 0;
+    margin: 2em .5em;
+    font-weight: bold;
+    color: white;
+    background: #00667a;
+    font-family: sans-serif;
+}
+
+.top_login_settings {
+    float: right;
+    padding: .5em 0 .5em 0;
+    margin: 2em .5em;
+    font-weight: bold;
+    color: white;
+    background: #00667a;
+    font-family: sans-serif;
+}
+
+.top_login_button a {
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.top_login_button a:hover {
+    background-color: #263c53;
+    padding: .5em;
+}
+
+.top_login_settings a {
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.top_login_settings a:hover {
+    background-color: #263c53;
+    padding: .5em;
+}
+
+/* Style Rules for header */
+.logo {
+    position: relative;
+    float: left;
+    max-width: 5%;
+    max-height: 25em;
+    top: -25px;
+}
+
+.logo img{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+h1 {
+    background-color: #008099;
+    padding: 1em;
+    max-height: 10%;
+}
+
+.header {
+    color: #ffffff;
+    font-family: sans-serif;
+    height: 10%;
+    max-height: 2em;
+}
+
+.header img {
+    display: block;
+    float: left;
+    left: 0;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0;
+    margin-top: -1.15em;
+    margin-left: -1.2em;
+}
+
+h2 {
+    font-family: sans-serif;
+    padding-left: .8em;
+}
+
+/* Style rules for main body and contents */
+body {
+    background-color: #263c53;
+    color: #ffffff;
+}
+
+body p {
+    margin: .5em;
+    padding: .5em;
+    font-family: sans-serif;
+}
+
+button {
+    text-align: center;
+    margin: 0 0 .5em 2.5em;
+    padding: .5em 1em;
+    background-color: #008099;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 3px #006275;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #27b48b;
+    color: #ffffff;
+}
+
+th {
+    font-family: sans-serif;
+    margin: auto;
+    padding: .5em;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li {
+    font-family: sans-serif;
+    margin: 0 0 1em .5em;
+    padding: .5em;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    background-color: #008099;
+    color: #ffffff;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 5px;
+    box-shadow: 0.1875rem 0.1875rem #006275;
+}
+
+li a:hover {
+    background-color: #27b48b;
+}
+
+#footer {
+    background-color: #00667a;
+    color: #ffffff;
+    padding: 1em;
+}
+
+#footer a {
+    color: #27b48b;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.4" author="PygubuDesigner 0.39.3">
+  <project>
+    <settings />
+    <customwidgets />
+  </project>
+  <object class="tk.Toplevel" id="main_window">
+    <property name="title" translatable="yes">Pantry Notification Management</property>
+    <containerlayout manager="grid">
+      <property name="anchor">center</property>
+      <property type="col" id="0" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="tk.Frame" id="main_frame">
+        <property name="cursor">arrow</property>
+        <property name="height">500</property>
+        <property name="padx">10</property>
+        <property name="pady">10</property>
+        <property name="width">600</property>
+        <layout manager="grid">
+          <property name="row">0</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="0" name="weight">1</property>
+          <property type="row" id="0" name="weight">1</property>
+        </containerlayout>
+        <child>
+          <object class="tk.Label" id="label_title">
+            <property name="font">{Arial} 18 {bold}</property>
+            <property name="text" translatable="yes">Template Management</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="pady">10</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="name_label" named="True">
+            <property name="text" translatable="yes">Template Name:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="template_name_entry" named="True">
+            <property name="width">25</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">5</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="subject_label" named="True">
+            <property name="text" translatable="yes">Subject:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="subject_entry" named="True">
+            <property name="width">25</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">5</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="tag_label" named="True">
+            <property name="background">#f0f0f0</property>
+            <property name="compound">top</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">Select Tag: </property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">5</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_text" named="True">
+            <property name="background">#f2f2f2</property>
+            <property name="text" translatable="yes">Text: </property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">5</property>
+              <property name="sticky">ne</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="template_text" named="True">
+            <property name="height">10</property>
+            <property name="width">55</property>
+            <property name="wrap">word</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">5</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="btn_clear" named="True">
+            <property name="command" type="command" cbtype="simple">clear_template</property>
+            <property name="compound">top</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="text" translatable="yes">Clear </property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">50</property>
+              <property name="pady">10</property>
+              <property name="row">6</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="btn_save_template">
+            <property name="command" type="command" cbtype="simple">save_template</property>
+            <property name="compound">top</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="foreground">#050505</property>
+            <property name="highlightbackground">#ffffff</property>
+            <property name="highlightcolor">#c0c0c0</property>
+            <property name="padx">15</property>
+            <property name="text" translatable="yes">Save Template</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">10</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_back" named="True">
+            <property name="command" type="command" cbtype="simple">back_to_landing</property>
+            <property name="text" translatable="yes">Back</property>
+            <property name="width">5</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">6</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="tag_combobox" named="True">
+            <property name="textvariable">string:combo_var</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

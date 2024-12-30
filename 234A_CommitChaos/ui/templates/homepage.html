@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% block title %}
+    PCC Food Pantry
+{% endblock %}
+{% block header %}
+    Panther Pantry at PCC
+{% endblock %}
+{% block content %}
+    <p>The Panther Pantry is Portland Community College's free food pantry.</p>
+    <p>Create an account to receive updates when fresh food is available. </p>
+    <p>Already subscribed? Log in to change your subscription settings.</p>
+<form method="GET" action="/login">
+    <button type="submit">Enter</button>
+</form>
+{% endblock %}
