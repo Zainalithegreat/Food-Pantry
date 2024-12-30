@@ -41,11 +41,10 @@ class Database:
         if cls.__connection is None:
             try:
                 cls.__connection = pymssql.connect(
-                    server="cisdbss.pcc.edu",
-                    database="234A_CommitChaos",
-                    user="234A_CommitChaos",
-                    password="MyLuckyCodes7#",
-                    charset="LATIN1"
+                    server=config["server"],
+                    database=config["database"],
+                    user=config["user"],
+                    password=config["password"]
                 )
                 print(cls.__connection)
             except pymssql.DatabaseError as e:
